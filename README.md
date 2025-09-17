@@ -2,20 +2,31 @@
 [licenseImg]: https://img.shields.io/badge/license-MIT-blue.svg
 [license]: LICENSE
 
+[PoggitSubmitted]: https://poggit.pmmp.io/shield.state/PlaceholderAPI
+[PoggitLink]: https://poggit.pmmp.io/p/PlaceholderAPI
+[PoggitVer]: https://poggit.pmmp.io/shield.api/PlaceholderAPI
+
 [releaseImg]: https://img.shields.io/badge/release-latest-brightgreen.svg
-[discord]: https://discord.gg/
+[releaselink]: https://github.com/NetherByte233/PlaceholderAPI-NetherByte-/releases/latest
+[wikiimg]: https://img.shields.io/badge/wiki-PlaceholderAPI-blue
+[wiki]: https://netherbyte233.github.io/PlaceholderAPI/
 
 [docs]: https://github.com/NetherByte233/PlaceholderAPI-PMMP/wiki
-
+[Youtubeimg]: https://img.shields.io/badge/YouTube-NetherByte-red
+[NetherByte]: https://youtube.com/@netherbyte-e2d?si=640wTLjcs--w_YIC
 [pmmp]: https://pmmp.io/
 
 # PlaceholderAPI for PocketMine‑MP (API 5)
-<p align="left" width="100%"><a href="https://github.com/NetherByte233/PlaceholderAPI-PMMP/wiki"><img src="https://netherbyte233.github.io/PlaceholderAPI-wiki/images/papilogo.png" alt="logo" width="512"></a></p> 
+<p align="left" width="100%"><a href="https://NetherByte233.github.io/PlaceholderAPI/"><img src="https://netherbyte233.github.io/PlaceholderAPI/assets/logo.png" alt="logo" width="512"></a></p> 
 
-[![licenseImg]][license] ![releaseImg]
+[![licenseImg]][license] [![releaseImg]][releaselink] [![PoggitSubmitted]][PoggitLink] [![PoggitVer]][PoggitLink] [![wikiimg]][wiki] [![Youtubeimg]][NetherByte]
+
 
 A lightweight, extensible Placeholder API for PocketMine‑MP that lets you embed dynamic values in messages, GUIs, and configs using tokens like `%player_name%` or `%server_tps%`. Plugins can also provide their own placeholders via a simple Provider/Expansion model.
 
+---
+## 🌍 Wiki
+- Check our plugin [wiki] for details of feature and other things.
 ---
 
 ## Features
@@ -35,7 +46,7 @@ Supported server: PocketMine‑MP API 5 ([pmmp]).
 
 ---
 
-## Quick Start (for developers)
+## Quick Start (for developers) 
 Resolve placeholders in your plugin:
 ```php
 use NetherByte\PlaceholderAPI\PlaceholderAPI;
@@ -138,7 +149,7 @@ final class MyProvider implements Provider{
 ## Contributing & Support
 - Bug reports and feature requests: see [issues].
 - Contributions welcome via PRs. Please keep expansions fast and identifiers consistent.
-- Join our Discord: [discord] (if available).
+- Subscribe to my YoutubeChannel [NetherByte]
 
 ---
 
