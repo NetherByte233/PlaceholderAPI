@@ -113,19 +113,19 @@ final class BuiltinExpansion extends Expansion{
                 }
                 if($key === 'armor_helmet_name'){
                     $it = $player->getArmorInventory()->getHelmet();
-                    return $it === null || $it->isNull() ? '' : $it->getVanillaName();
+                    return $it->isNull() ? '' : $it->getVanillaName();
                 }
                 if($key === 'armor_chestplate_name'){
                     $it = $player->getArmorInventory()->getChestplate();
-                    return $it === null || $it->isNull() ? '' : $it->getVanillaName();
+                    return $it->isNull() ? '' : $it->getVanillaName();
                 }
                 if($key === 'armor_leggings_name'){
                     $it = $player->getArmorInventory()->getLeggings();
-                    return $it === null || $it->isNull() ? '' : $it->getVanillaName();
+                    return $it->isNull() ? '' : $it->getVanillaName();
                 }
                 if($key === 'armor_boots_name'){
                     $it = $player->getArmorInventory()->getBoots();
-                    return $it === null || $it->isNull() ? '' : $it->getVanillaName();
+                    return $it->isNull() ? '' : $it->getVanillaName();
                 }
         }
         return null;
@@ -145,19 +145,19 @@ final class BuiltinExpansion extends Expansion{
             case 'tps':
                 return number_format($server->getTicksPerSecond(), 2);
             case 'tps_1':
-                return number_format($server->getTicksPerSecondAverage(1), 2);
+                return number_format($server->getTicksPerSecond(), 2);
             case 'tps_5':
-                return number_format($server->getTicksPerSecondAverage(5), 2);
+                return number_format($server->getTicksPerSecond(), 2);
             case 'tps_15':
-                return number_format($server->getTicksPerSecondAverage(15), 2);
+                return number_format($server->getTicksPerSecond(), 2);
             case 'tps_1_colored':
-                return $this->colorTps($server->getTicksPerSecondAverage(1));
+                return $this->colorTps($server->getTicksPerSecond());
             case 'tps_5_colored':
-                return $this->colorTps($server->getTicksPerSecondAverage(5));
+                return $this->colorTps($server->getTicksPerSecond());
             case 'tps_15_colored':
-                return $this->colorTps($server->getTicksPerSecondAverage(15));
+                return $this->colorTps($server->getTicksPerSecond());
             case 'uptime':
-                $uptime = (int) (microtime(true) - \pocketmine\START_TIME);
+                $uptime = (int) (microtime(true) - $server->getStartTime());
                 $h = intdiv($uptime, 3600); $m = intdiv($uptime % 3600, 60); $s = $uptime % 60;
                 return sprintf('%02d:%02d:%02d', $h, $m, $s);
             default:

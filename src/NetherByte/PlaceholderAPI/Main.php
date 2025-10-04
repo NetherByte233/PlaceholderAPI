@@ -163,7 +163,7 @@ final class Main extends PluginBase implements Listener{
                 $player = null;
                 // If last arg matches an online player, treat it as player and exclude from text
                 $maybe = end($args);
-                $maybePlayer = $maybe !== false ? $this->getServer()->getPlayerExact((string)$maybe) : null;
+                $maybePlayer = $maybe === false ? null : $this->getServer()->getPlayerExact((string)$maybe);
                 if($maybePlayer !== null){ array_pop($args); $player = $maybePlayer; }
                 $text = implode(' ', $args);
                 $parsed = PlaceholderAPI::parse($text, $player);

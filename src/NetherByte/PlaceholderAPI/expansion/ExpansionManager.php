@@ -10,7 +10,7 @@ final class ExpansionManager{
     /** @var Expansion[] */
     private array $expansions = [];
 
-    public function __construct(private Plugin $owner){}
+    public function __construct(){}
 
     public function register(Expansion $expansion) : void{
         $this->expansions[spl_object_id($expansion)] = $expansion;
