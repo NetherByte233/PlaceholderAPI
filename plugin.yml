@@ -1,0 +1,36 @@
+name: PlaceholderAPI_NB
+main: NetherByte\PlaceholderAPI\Main
+version: 1.0.0
+author: NetherByte
+description: A lightweight Placeholder API for PocketMine-MP (API 5) with expansion support.
+api: [5.0.0]
+load: STARTUP
+
+commands:
+  papi:
+    description: PlaceholderAPI management commands
+    usage: "/papi <list|providers|download|reload|info>"
+    permission: placeholderapi.command.base
+
+permissions:
+  placeholderapi.use:
+    default: true
+    description: Allows usage of PlaceholderAPI parsing in other plugins (if exposed)
+  placeholderapi.command.base:
+    default: op
+    description: Access to /papi command
+  placeholderapi.command.list:
+    default: op
+    description: Use /papi list
+  placeholderapi.command.providers:
+    default: op
+    description: Use /papi providers
+  placeholderapi.command.download:
+    default: op
+    description: Use /papi download <identifier>
+  placeholderapi.command.reload:
+    default: op
+    description: Use /papi reload
+  placeholderapi.command.info:
+    default: op
+    description: Use /papi info <identifier[:param]> [player]
