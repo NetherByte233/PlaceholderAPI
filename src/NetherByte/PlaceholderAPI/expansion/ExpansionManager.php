@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace NetherByte\PlaceholderAPI\expansion;
 
-use pocketmine\plugin\Plugin;
 
 final class ExpansionManager{
     /** @var Expansion[] */

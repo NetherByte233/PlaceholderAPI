@@ -30,7 +30,7 @@ final class Main extends PluginBase implements Listener{
     }
 
     public function onEnable() : void{
-        $this->expansionManager = new ExpansionManager($this);
+        $this->expansionManager = new ExpansionManager();
         $this->providerManager = new ProviderManager($this);
 
         // Register built-in expansion
@@ -163,7 +163,10 @@ final class Main extends PluginBase implements Listener{
                 $player = null;
                 // If last arg matches an online player, treat it as player and exclude from text
                 $maybe = end($args);
-                $maybePlayer = $maybe === false ? null : $this->getServer()->getPlayerExact((string)$maybe);
+                $maybePlayer = null;
+                if(is_string($maybe)){
+                    $maybePlayer = $this->getServer()->getPlayerExact($maybe);
+                }
                 if($maybePlayer !== null){ array_pop($args); $player = $maybePlayer; }
                 $text = implode(' ', $args);
                 $parsed = PlaceholderAPI::parse($text, $player);
