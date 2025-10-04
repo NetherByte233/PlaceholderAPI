@@ -1,0 +1,83 @@
+site_name: PlaceholderAPI
+site_url: https://NetherByte233.github.io/Placeholderapi/
+
+repo_name: PlaceholderAPI
+repo_url: https://github.com/NetherByte233/Placeholderapi
+edit_uri: edit/wiki/docs/
+theme:
+  name: material
+  logo: assets/papi.png
+  favicon: assets/papi.png
+  palette:
+    # light mode
+    - scheme: default
+      primary: green     # Main header/nav color (light mode)
+      accent: deep purple   # Links, highlights, and buttons
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # dark mode
+    - scheme: slate
+      primary: deep purple  # Main header/nav color (dark mode)
+      accent: green        # Links, highlights, and buttons
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+  features:
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.tabs.link
+    - content.cards     
+    - navigation.tabs
+    - navigation.sections
+    - navigation.instant
+    - navigation.top
+    - toc.follow
+    - header.autohide
+    - navigation.expand
+    - navigation.prune
+    - content.action.edit
+    - content.footnote.tooltip
+    - content.action.edit
+    - content.code.copy
+
+plugins: 
+  - search
+
+nav:
+  - Welcome: index.md
+  - User guides:
+      - User Guide: user-guide.md
+      - Getting Started: getting-started.md
+      - Commands: commands.md
+      - Using Placeholders: using-placeholders.md
+      - Placeholders list: placeholder-list.md
+      - Plugins using placeholders: plugins-using.md
+  - Dev guides:
+      - Developer Guide: developer-guide.md
+      - Using PlaceholderAPI: dev-using-placeholderapi.md
+      - Creating expansions and providers: dev-creating-expansion.md
+  - Common issues & FAQ (legacy): common-issues-and-faq.md
+  - Changelog: changelog.md
+  - Contributing: contributing.md
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra:
+  social:
+    - icon: simple/youtube
+      link: https://www.youtube.com/@netherbyte-e2d
+    - icon: simple/github
+      link: https://github.com/NetherByte233/PlaceholderAPI_NB
