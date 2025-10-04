@@ -13,7 +13,7 @@
 # PlaceholderAPI for PocketMine‑MP (API 5)
 <p align="left" width="100%"><a href="https://NetherByte233.github.io/Placeholderapi/"><img src="https://netherbyte233.github.io/Placeholderapi/assets/logo.png" alt="logo" width="512"></a></p> 
 
-[![licenseImg]][license] [![releaseImg]][releaselink] [![PoggitSubmitted]][PoggitLink] [![PoggitVer]][PoggitLink] [![wikiimg]][wiki] [![Youtubeimg]][NetherByte]
+[![licenseImg]][license] [![wikiimg]][wiki] [![Youtubeimg]][NetherByte]
 
 
 A lightweight, extensible Placeholder API for PocketMine‑MP that lets you embed dynamic values in messages, GUIs, and configs using tokens like `%player_name%` or `%server_tps%`. Plugins can also provide their own placeholders via a simple Provider/Expansion model.
