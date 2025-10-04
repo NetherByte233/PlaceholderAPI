@@ -2,12 +2,6 @@
 [licenseImg]: https://img.shields.io/badge/license-MIT-blue.svg
 [license]: LICENSE
 
-[PoggitSubmitted]: https://poggit.pmmp.io/shield.state/PlaceholderAPI
-[PoggitLink]: https://poggit.pmmp.io/p/PlaceholderAPI
-[PoggitVer]: https://poggit.pmmp.io/shield.api/PlaceholderAPI
-
-[releaseImg]: https://img.shields.io/badge/release-latest-brightgreen.svg
-[releaselink]: https://github.com/NetherByte233/PlaceholderAPI-NetherByte-/releases/latest
 [wikiimg]: https://img.shields.io/badge/wiki-PlaceholderAPI-blue
 [wiki]: https://netherbyte233.github.io/PlaceholderAPI/
 
